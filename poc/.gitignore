@@ -1,0 +1,6 @@
+.venv/
+.env
+.google_token.json
+report.json
+__pycache__/
+*.pyc
