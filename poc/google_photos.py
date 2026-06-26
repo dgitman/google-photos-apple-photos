@@ -19,7 +19,7 @@ except ImportError:
 
 SCOPES = [
     "https://www.googleapis.com/auth/photoslibrary.readonly",
-    "https://www.googleapis.com/auth/photoslibrary.edit.appcreateddata",
+    "https://www.googleapis.com/auth/photoslibrary",
 ]
 
 TOKEN_FILE = Path(__file__).parent / ".google_token.json"
