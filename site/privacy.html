@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Photo Sync</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f9f9f9;
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    header a {
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .icon {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, #4f8ef7, #34c759);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1rem;
+    }
+
+    header h1 {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .page-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .meta {
+      color: #888;
+      font-size: 0.9rem;
+      margin-bottom: 2.5rem;
+    }
+
+    section {
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      border-radius: 12px;
+      padding: 1.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    section h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: #111;
+    }
+
+    section p {
+      color: #444;
+      font-size: 0.95rem;
+      margin-bottom: 0.75rem;
+    }
+
+    section p:last-child {
+      margin-bottom: 0;
+    }
+
+    section ul {
+      padding-left: 1.25rem;
+      color: #444;
+      font-size: 0.95rem;
+    }
+
+    section ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .scope-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
+    .scope-table th {
+      text-align: left;
+      padding: 0.5rem 0.75rem;
+      background: #f4f4f5;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .scope-table td {
+      padding: 0.6rem 0.75rem;
+      border-top: 1px solid #e5e5e5;
+      color: #444;
+      vertical-align: top;
+    }
+
+    code {
+      background: #f4f4f5;
+      padding: 0.1em 0.4em;
+      border-radius: 4px;
+      font-size: 0.85em;
+      font-family: "SF Mono", "Fira Code", monospace;
+    }
+
+    a {
+      color: #4f8ef7;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.875rem;
+      color: #888;
+      border-top: 1px solid #e5e5e5;
+      margin-top: 2rem;
+    }
+
+    footer a {
+      color: #4f8ef7;
+      margin: 0 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="/">
+      <div class="icon">⇄</div>
+      <h1>Photo Sync</h1>
+    </a>
+  </header>
+
+  <main>
+    <h1 class="page-title">Privacy Policy</h1>
+    <p class="meta">Effective Date: June 25, 2026 &nbsp;·&nbsp; Last Updated: June 26, 2026</p>
+
+    <section>
+      <h2>1. Overview</h2>
+      <p>
+        Photo Sync ("we," "our," or "us") is committed to protecting your privacy.
+        This Privacy Policy explains what data we collect, how we use it, and how we
+        protect it when you use Photo Sync (the "App").
+      </p>
+      <p>
+        Photo Sync synchronizes your Apple Photos and Google Photos libraries by
+        archiving photos in Google Photos that you have deleted from Apple Photos.
+        We access the minimum data necessary to provide this functionality.
+      </p>
+    </section>
+
+    <section>
+      <h2>2. Google API Data Access</h2>
+      <p>
+        When you connect your Google account, Photo Sync requests the following
+        Google API scopes:
+      </p>
+      <table class="scope-table">
+        <thead>
+          <tr>
+            <th>Scope</th>
+            <th>Why it is needed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>photoslibrary.readonly</code></td>
+            <td>
+              To read photo metadata (filenames and capture dates) from your
+              Google Photos library so we can match photos against your Apple
+              Photos library. We never download photo or video content.
+            </td>
+          </tr>
+          <tr>
+            <td><code>photoslibrary</code></td>
+            <td>
+              To archive photos in Google Photos that you have deleted from
+              Apple Photos. The Google Photos API requires this scope to archive
+              existing library items. We only archive — we never permanently
+              delete photos. Archiving is fully reversible.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="margin-top: 0.75rem;">
+        More limited scopes are not sufficient: <code>photoslibrary.readonly</code>
+        alone does not permit archiving, and
+        <code>photoslibrary.edit.appcreateddata</code> only permits editing items
+        uploaded by the app itself, which excludes pre-existing library items.
+      </p>
+    </section>
+
+    <section>
+      <h2>3. What we do not do with your data</h2>
+      <ul>
+        <li>We do not download, copy, or store your photos or videos.</li>
+        <li>We do not permanently delete any photos from Google Photos.</li>
+        <li>We do not sell, trade, or share your data with third parties.</li>
+        <li>We do not use your data for advertising or tracking.</li>
+        <li>We do not transmit photo content outside of Google's own infrastructure.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Data we store</h2>
+      <p>We store only what is necessary to operate the sync:</p>
+      <ul>
+        <li>Your Google account email address (to identify your account)</li>
+        <li>Google OAuth access and refresh tokens (encrypted at rest)</li>
+        <li>Photo metadata (filenames and dates) used for matching — not photo content</li>
+        <li>Sync history (what was archived and when) for your audit log</li>
+      </ul>
+      <p>
+        All stored data is encrypted at rest and in transit using
+        industry-standard protocols.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. Google API Services User Data Policy</h2>
+      <p>
+        Photo Sync's use and transfer of information received from Google APIs
+        adheres to the
+        <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">
+          Google API Services User Data Policy
+        </a>,
+        including the Limited Use requirements.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. Data retention and deletion</h2>
+      <p>
+        We retain your data only as long as your account is active. If you
+        disconnect your Google account or delete your Photo Sync account, all
+        associated OAuth tokens, metadata, and sync history are permanently
+        deleted from our systems within 30 days.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Revoking access</h2>
+      <p>You can revoke Photo Sync's access to your Google account at any time:</p>
+      <ul>
+        <li>Within the App under Settings → Connected Accounts</li>
+        <li>Via your <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account permissions page</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. Contact</h2>
+      <p>
+        If you have questions or concerns about this Privacy Policy or our data
+        practices, please contact us at:
+      </p>
+      <p>
+        <strong>Email:</strong> <a href="mailto:davidmarkgitman@gmail.com">davidmarkgitman@gmail.com</a><br />
+        <strong>Website:</strong> <a href="https://dalva.ventures/">https://dalva.ventures/</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; 2026 Photo Sync &nbsp;·&nbsp;
+      <a href="/">Home</a>
+      &nbsp;·&nbsp;
+      <a href="/tos/">Terms of Service</a>
+    </p>
+  </footer>
+
+</body>
+</html>
