@@ -1,38 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Terms of Service &ndash; Photo Sync</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service – Photo Sync</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f9f9f9;
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    header a {
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .icon {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, #4f8ef7, #34c759);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1rem;
+    }
+
+    header h1 {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .page-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .meta {
+      color: #888;
+      font-size: 0.9rem;
+      margin-bottom: 2.5rem;
+    }
+
+    section {
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      border-radius: 12px;
+      padding: 1.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    section h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: #111;
+    }
+
+    section p {
+      color: #444;
+      font-size: 0.95rem;
+      margin-bottom: 0.75rem;
+    }
+
+    section p:last-child {
+      margin-bottom: 0;
+    }
+
+    section ul {
+      padding-left: 1.25rem;
+      color: #444;
+      font-size: 0.95rem;
+    }
+
+    section ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: #4f8ef7;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.875rem;
+      color: #888;
+      border-top: 1px solid #e5e5e5;
+      margin-top: 2rem;
+    }
+
+    footer a {
+      color: #4f8ef7;
+      margin: 0 0.5rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>Terms of Service</h1>
-  <p><strong>Effective Date:</strong> June 25, 2026</p>
 
-  <p>These Terms of Service ("Terms") govern your use of the Photo Sync application, service, and website (collectively, the "Service") provided by Photo Sync ("we," "us," or "our"). By accessing or using our Service, you agree to be bound by these Terms.</p>
+  <header>
+    <a href="/">
+      <div class="icon">⇄</div>
+      <h1>Photo Sync</h1>
+    </a>
+  </header>
 
-  <h2>1. Acceptance of Terms</h2>
-  <p>By using Photo Sync, you confirm that you are at least 18 years old and that you understand and agree to these Terms. If you do not agree to these Terms, you may not use the Service.</p>
+  <main>
+    <h1 class="page-title">Terms of Service</h1>
+    <p class="meta">Effective Date: June 25, 2026 &nbsp;·&nbsp; Last Updated: June 26, 2026</p>
 
-  <h2>2. Use of Service</h2>
-  <p>Photo Sync allows users to connect their Google Photos to manage your photo library. You agree to use the Service only for lawful purposes and in accordance with these Terms. You are responsible for maintaining the confidentiality of your account and password.</p>
+    <section>
+      <h2>1. Acceptance of Terms</h2>
+      <p>
+        These Terms of Service ("Terms") govern your use of the Photo Sync application,
+        service, and website (collectively, the "Service") provided by Photo Sync
+        ("we," "us," or "our"). By accessing or using the Service, you agree to be
+        bound by these Terms.
+      </p>
+      <p>
+        By using Photo Sync, you confirm that you are at least 18 years old and that
+        you understand and agree to these Terms. If you do not agree, you may not use
+        the Service.
+      </p>
+    </section>
 
-  <h2>3. Privacy</h2>
-  <p>Our collection and use of your information&mdash;including any data accessed via Google APIs&mdash;are governed by our <a href="https://gist.githubusercontent.com/dgitman/dd4c727b56a29d982bb99da011a9f5ab/raw/2964483d99bc0dc8fed3bda6390109f6cdb85499/gistfile1.txt">Privacy Policy</a>. By using the Service, you consent to our data practices.</p>
+    <section>
+      <h2>2. Description of Service</h2>
+      <p>
+        Photo Sync compares your Apple Photos and Google Photos libraries and
+        automatically archives photos in Google Photos that you have deleted from
+        Apple Photos. The Service accesses your Google Photos library metadata
+        (filenames and capture dates) solely to provide this functionality.
+      </p>
+      <p>
+        Archiving is not permanent deletion — archived photos remain in your Google
+        Photos library and can be restored at any time.
+      </p>
+    </section>
 
-  <h2>4. Intellectual Property</h2>
-  <p>The Service and its original content, features, and functionality are owned by Photo Sync and are protected by international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws.</p>
+    <section>
+      <h2>3. Google Account Access</h2>
+      <p>
+        To use Photo Sync, you must authorize access to your Google Photos library
+        via Google OAuth. By granting access, you authorize us to:
+      </p>
+      <ul>
+        <li>Read photo metadata (filenames and dates) from your Google Photos library</li>
+        <li>Archive photos in your Google Photos library on your behalf</li>
+      </ul>
+      <p>
+        You can revoke this access at any time via your
+        <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">
+          Google Account permissions page</a>.
+        Our full data practices are described in our
+        <a href="/privacy/">Privacy Policy</a>.
+      </p>
+    </section>
 
-  <h2>5. Termination</h2>
-  <p>We reserve the right to suspend or terminate your access to the Service at any time, without notice or liability, for any reason, including but not limited to your breach of these Terms.</p>
+    <section>
+      <h2>4. Acceptable Use</h2>
+      <p>You agree to use the Service only for lawful purposes. You may not:</p>
+      <ul>
+        <li>Use the Service to violate any applicable law or regulation</li>
+        <li>Attempt to gain unauthorized access to any part of the Service</li>
+        <li>Interfere with or disrupt the integrity or performance of the Service</li>
+        <li>Use the Service on behalf of others without their explicit consent</li>
+      </ul>
+    </section>
 
-  <h2>6. Limitation of Liability</h2>
-  <p>In no event shall Photo Sync, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages arising out of your use or inability to use the Service.</p>
+    <section>
+      <h2>5. Intellectual Property</h2>
+      <p>
+        The Service and its original content, features, and functionality are owned
+        by Photo Sync and are protected by applicable intellectual property laws.
+        Your photos remain your own — we claim no ownership over any content accessed
+        through your Google Photos library.
+      </p>
+    </section>
 
-  <h2>7. Changes to Terms</h2>
-  <p>We reserve the right to modify or replace these Terms at any time. We will provide notice of any material changes by posting the new Terms on this page. Your continued use of the Service after changes constitute your acceptance of the new Terms.</p>
+    <section>
+      <h2>6. Disclaimer of Warranties</h2>
+      <p>
+        The Service is provided "as is" and "as available" without warranties of any
+        kind, either express or implied. We do not warrant that the Service will be
+        uninterrupted, error-free, or that any archived photos will be recoverable.
+        You are responsible for maintaining your own backups.
+      </p>
+    </section>
 
-  <h2>8. Contact Us</h2>
-  <p>If you have any questions about these Terms, please contact us at <a href="mailto:davidmarkgitman@gmail.com">davidmarkgitman@gmail.com</a>.</p>
+    <section>
+      <h2>7. Limitation of Liability</h2>
+      <p>
+        To the fullest extent permitted by law, Photo Sync shall not be liable for
+        any indirect, incidental, special, consequential, or punitive damages arising
+        from your use of the Service, including any loss of photos or data.
+      </p>
+    </section>
+
+    <section>
+      <h2>8. Termination</h2>
+      <p>
+        We reserve the right to suspend or terminate your access to the Service at
+        any time, for any reason, without notice or liability. You may stop using
+        the Service at any time and revoke Google account access via your Google
+        Account settings.
+      </p>
+    </section>
+
+    <section>
+      <h2>9. Changes to These Terms</h2>
+      <p>
+        We may update these Terms from time to time. We will notify you of material
+        changes by updating the "Last Updated" date above. Your continued use of the
+        Service after changes constitutes your acceptance of the revised Terms.
+      </p>
+    </section>
+
+    <section>
+      <h2>10. Contact</h2>
+      <p>
+        If you have questions about these Terms, please contact us at:<br />
+        <a href="mailto:davidmarkgitman@gmail.com">davidmarkgitman@gmail.com</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; 2026 Photo Sync &nbsp;·&nbsp;
+      <a href="/">Home</a>
+      &nbsp;·&nbsp;
+      <a href="/privacy/">Privacy Policy</a>
+    </p>
+  </footer>
+
 </body>
 </html>
